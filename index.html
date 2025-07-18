@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico Agrícola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Diagnóstico de Plantas</h1>
+    
+    <label for="planta">Escolha a planta:</label>
+    <select id="planta" onchange="carregarSintomas()">
+      <option value="">-- Selecione --</option>
+      <option value="milho">Milho 🌽</option>
+      <option value="soja">Soja 🌿</option>
+      <option value="tomate">Tomate 🍅</option>
+    </select>
+
+    <div id="sintomas-container" style="display: none;">
+      <label for="sintoma">Escolha o sintoma:</label>
+      <select id="sintoma"></select>
+      <button onclick="mostrarDiagnostico()">Ver Diagnóstico</button>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
